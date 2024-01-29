@@ -16,7 +16,8 @@ ros2 pkg create --build-type ament_cmake ekf_yck
 Move src and include files into the created package
 colcon build
 source install/setup.bash
-ros2 run diff_drive diff_drive
+~/Desktop/GITHUB/Ekf_yck2$ ros2 run ekf_yck2 ekf_drive 
+
  ```
 
 In another terminal, install gazebo: <br>
