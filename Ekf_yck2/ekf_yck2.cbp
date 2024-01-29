@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Ekf_yck2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Ekf_yck" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="../../../../../opt/ros/humble/include/rclcpp" />
+					<Add directory="../../../../../opt/ros/humble/include/rcl" />
+					<Add directory="../../../../../opt/ros/humble/include/rcutils" />
+					<Add directory="../../../../../opt/ros/humble/include/rmw" />
+					<Add directory="../../../../../opt/ros/humble/include/rcl_yaml_param_parser" />
+					<Add directory="../../../../../opt/ros/humble/include/rosidl_runtime_c" />
+					<Add directory="../../../../../opt/ros/humble/include/rosidl_typesupport_interface" />
+					<Add directory="../../../../../opt/ros/humble/include/rcpputils" />
+					<Add directory="../../../../../opt/ros/humble/include/builtin_interfaces" />
+					<Add directory="/opt/ros/humble/include/rosidl_runtime_cpp" />
+					<Add directory="/opt/ros/humble/include/tracetools" />
+					<Add directory="/opt/ros/humble/include/rcl_interfaces" />
+					<Add directory="/opt/ros/humble/include/libstatistics_collector" />
+					<Add directory="/opt/ros/humble/include/statistics_msgs" />
+					<Add directory="/opt/ros/humble/include/geometry_msgs" />
+					<Add directory="/opt/ros/humble/include/tf2" />
+					<Add directory="/opt/ros/humble/include/sensor_msgs" />
+					<Add directory="/opt/ros/humble/include/tf2_geometry_msgs" />
+					<Add directory="/opt/ros/humble/include/std_msgs" />
+					<Add directory="/opt/ros/humble/include/tf2_ros" />
+					<Add directory="/opt/ros/humble/include/nav_msgs" />
+					<Add directory="/opt/ros/humble/include/tf2_msgs" />
+				</Compiler>
+				<Linker>
+					<Add library="../../../../../opt/ros/humble/lib/librclcpp.so" />
+					<Add library="../../../../../opt/ros/humble/lib/librcl.so" />
+					<Add library="../../../../../opt/ros/humble/lib/librcutils.so" />
+					<Add library="../../../../../opt/ros/humble/lib/libtracetools.so" />
+					<Add library="../../../../../opt/ros/humble/lib/librmw.so" />
+					<Add library="../../../../../opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so" />
+					<Add library="../../../../../opt/ros/humble/lib/librcl_yaml_param_parser.so" />
+					<Add library="../../../../../opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_cpp.so" />
+					<Add library="../../../../../opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_cpp.so" />
+					<Add library="../../../../../opt/ros/humble/lib/librmw_implementation.so" />
+					<Add library="../../../../../opt/ros/humble/lib/libament_index_cpp.so" />
+					<Add library="../../../../../opt/ros/humble/lib/liblibstatistics_collector.so" />
+					<Add library="../../../../../opt/ros/humble/lib/librcpputils.so" />
+					<Add library="../../../../../opt/ros/humble/lib/librcl_logging_interface.so" />
+					<Add library="../../../../../opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so" />
+					<Add library="../../../../../opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so" />
+					<Add library="../../../../../opt/ros/humble/lib/librosidl_runtime_c.so" />
+					<Add library="../../../../../opt/ros/humble/lib/librosidl_typesupport_cpp.so" />
+					<Add library="../../../../../opt/ros/humble/lib/librosidl_typesupport_c.so" />
+					<Add library="../../../../../opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so" />
+					<Add library="../../../../../opt/ros/humble/lib/librcl_logging_spdlog.so" />
+					<Add library="../../../../../opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so" />
+					<Add library="../../../../../opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so" />
+					<Add library="../../../../../opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so" />
+					<Add library="../../../../../opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so" />
+					<Add library="../../../../../opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so" />
+					<Add library="../../../../../opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so" />
+					<Add library="../../../../../opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so" />
+					<Add library="../../../../../opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so" />
+					<Add library="../../../../../opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so" />
+					<Add library="../../../../../opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_cpp.so" />
+					<Add directory="../../../../../opt/ros/humble/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Ekf_yck" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/ControllerNode.h" />
+		<Unit filename="include/EKFNode.h" />
+		<Unit filename="include/Imu_Reader.h" />
+		<Unit filename="include/Odom_Reader.h" />
+		<Unit filename="include/Robot_Motion.h" />
+		<Unit filename="src/ControllerNode.cpp" />
+		<Unit filename="src/EKFNode.cpp" />
+		<Unit filename="src/Imu_Reader.cpp" />
+		<Unit filename="src/Odom_Reader.cpp" />
+		<Unit filename="src/Robot_Motion.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
