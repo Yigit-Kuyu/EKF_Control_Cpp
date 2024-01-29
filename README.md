@@ -59,7 +59,7 @@ paths in the *Search directories* <br>
 - If you get an error "xyz.so2: cannot open shared object file: No such file or directory" when press the run button on Code::Blocks : 
     - Find the path of "xyz.so"
     - Add this path to Search directories-->Linker
-    - In my case, click here
+    - In my case, click [here](https://github.com/Yigit-Kuyu/EKF_Control_Cpp/blob/main/AddLinkerLibrary.png)   
   
 
 
