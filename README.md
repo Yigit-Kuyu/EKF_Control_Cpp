@@ -50,7 +50,7 @@ You can see *libi2c-dev* as one of the results of the *apt-file search*. For ins
 
 
 
-## Standalone Installation via Code::Blocks 20::03 
+## Standalone Installation via Code::Blocks
 
 To run the code propely in Code::Blocks 20.03, you need to add: <br>
 linkers files (.so) in *Linker settings* <br>
