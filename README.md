@@ -29,6 +29,8 @@ sudo apt install ros-humble-turtlebot3*
  ```
 source /opt/ros/humble/setup.bash
 source /usr/share/gazebo/setup.sh
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
+export TURTLEBOT3_MODEL=burger
 ros2 launch turtlebot3_gazebo empty_world.launch.py
  ```
 
@@ -56,6 +58,8 @@ You can see *libi2c-dev* as one of the results of the *apt-file search*. For ins
 To run the code propely in Code::Blocks 20.03, you need to add: <br>
 linkers files (.so) in *Linker settings* <br>
 paths in the *Search directories* <br>
+
+In addition, gazebo must be lunched as given above.  <br>
 
 - If you get an error "xyz.so2: cannot open shared object file: No such file or directory" when press the run button on Code::Blocks : 
     - Find the path of "xyz.so"
