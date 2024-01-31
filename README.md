@@ -38,7 +38,7 @@ ros2 launch turtlebot3_gazebo empty_world.launch.py
 
     - Install *apt-file*: <br>
 ```
-sudo apt-get install apt-file  <br>
+sudo apt-get install apt-file 
 apt-file update
 ```
 
